@@ -4,18 +4,21 @@ int main ()
 {
     float h;
     printf ("Введите шаг для x -> ");
-    scanf("%f", h);
+    scanf("%f", &h);
     float x=-1.5;
+    printf("%f, %f \n", h, x);
     do
     {
         float y=(pow(x,2)-2*(pow(x,3)))*(cos(pow(x,2)));
-        printf("%f \n", y);
+        printf("%f, %f \n", y, x);
         x=x+h;
-    } while (-1.5<=x<=0);
+    } while ((-1.5<=x) & (x<=0));
     do
     {
-        float y=exp(sin(2*x));
-        printf("%f \n", y);
+        
+        float q=exp(sin(2*x));
+        printf("%f; %f \n", q, x);
         x=x+h;
-    } while (0<x<=1.5);
+    } while ((0<x) & (x<=1.5));
+    return 0;
 }
