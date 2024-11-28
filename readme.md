@@ -33,11 +33,11 @@ int main ()
         printf("%f, %f \n", y, x);
         x=x+h;
     }
-    while ((0<x) & (x<=1.5))
+    while ((0<x) & (x<=1.5+h/2))
     {
         
         float q=exp(sin(2*x));
-        printf("%f; %f \n", q, x);
+        printf("%f; %7.4f \n", q, x);
         x=x+h;
     }
     return 0;
@@ -53,7 +53,7 @@ int main ()
     float h;
     printf ("Введите шаг для x -> ");
     scanf("%f", &h);
-    floawhilet x=-1.5;
+    float x=-1.5;
     printf("%f, %f \n", h, x);
     for ((-1.5<=x) & (x<=0))
     {
@@ -61,13 +61,16 @@ int main ()
         printf("%f, %f \n", y, x);
         x=x+h;
     }
-    for ((0<x) & (x<=1.5))
+    for ((0<x) & (x<=1.5+h/2))
     {
         
         float q=exp(sin(2*x));
-        printf("%f; %f \n", q, x);
+        printf("%f; %7.4f \n", q, x);
         x=x+h;
     }
     return 0;
 }
  ```
+
+## Результат работы gnuplot
+<image src=graphscr.png alt="результат работы гнуплот">
