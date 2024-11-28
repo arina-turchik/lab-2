@@ -74,3 +74,7 @@ int main ()
 
 ## Результат работы gnuplot
 <image src=graphscr.png alt="результат работы гнуплот">
+
+## Источники
+
+[Работа с gnuplot](https://habr.com/ru/companies/ruvds/articles/517450/)
